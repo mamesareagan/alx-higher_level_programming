@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if  __name__ == '__main__':
+if __name__ == '__main__':
     import calculator_1 as c
     import sys as s
     if (len(s.argv) != 4):
@@ -20,5 +20,5 @@ if  __name__ == '__main__':
         print('{} / {} = {}'.format(a, b, c.div(a, b)))
         s.exit(0)
     else:
-        print ('Unknown operator. Available operators: +, -, * and /')
+        print('Unknown operator. Available operators: +, -, * and /')
         s.exit(1)
