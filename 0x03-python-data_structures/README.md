@@ -1,1 +1,1 @@
-This directory is all about Data structures.Here I learnt Lists ad also Tuples
+This repo covers the basics of Python as a high-level programming language.
