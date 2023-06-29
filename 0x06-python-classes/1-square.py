@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-class Square:
-    """Represent a square."""
+"""Represent a square.
+private instance of  size"""
 
+
+class Square:
     def __init__(self, size):
         """Initialize a new Square.
 
