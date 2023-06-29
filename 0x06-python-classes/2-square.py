@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''class rep for a square'''
+
+
 class Square:
     """Represent a square."""
 
@@ -10,7 +12,7 @@ class Square:
             size (int): The size of the new square.
         Raises:
             TypeError: if 'size' is not an integer.
-            ValueError: if 'size' is less than zero.			
+            ValueError: if 'size' is less than zero.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
