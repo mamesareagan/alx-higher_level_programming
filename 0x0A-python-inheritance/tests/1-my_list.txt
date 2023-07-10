@@ -42,8 +42,12 @@ A ``TypeError`` will be raised for any more than one instantiation arguments.
 ::
 
     >>> my_list = MyList([1, 2], [3, 4])
-    Traceback (most recent call last):
-    TypeError: list() takes at most 1 argument (2 given)
+     Traceback (most recent call last):
+    File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+    exec(compile(example.source, filename, "single",
+    File "<doctest 1-my_list.txt[7]>", line 1, in <module>
+         my_list = MyList([1, 2], [3, 4])
+    TypeError: list expected at most 1 argument, got 2
 
 Usage
 =====
