@@ -14,3 +14,17 @@ class BaseGeometry:
 
         if not isinstance(value, int):
             raise TypeError("<name> must be an integer")
+
+class Rectangle(BaseGeometry):
+    '''rectangle class that inherits from BasrGeometry'''
+    def __init__(self, width, height):
+        '''constructor method
+
+        Args:
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+        '''
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
