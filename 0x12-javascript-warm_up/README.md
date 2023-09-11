@@ -1,8 +1,8 @@
 Javascript - Warm up
-This was the first JavaScript project I completed at Holberton. Tasks involved writing various introductory-level JavaScript scripts on Node.js.
+This was the first JavaScript project I completed at ALX. Tasks involved writing various introductory-level JavaScript scripts on Node.js.
 
 Tests ✔️
-tests: Folder of test files. Provided by Holberton School.
+tests: Folder of test files. Provided by ALX School.
 Function Prototypes 💾
 Prototypes for functions written in this project:
 
@@ -27,7 +27,7 @@ Line 3: 'Javascript is amazing'.
 2-arguments.js: JavaScript script that prints a message depending on the number of arguments passed.
 Usage: ./2-arguments.js <arg 1> <arg 2> ...
 If no arguments are passed, prints 'No argument'.
-If one argument is passed, prints 'Argument found'.
+If one argument is passed, prints 'Argument :found'.
 Otherwise, prints 'Arguments found'.
 3. Value of my argument
 
