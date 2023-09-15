@@ -3,10 +3,10 @@
 # Usage: ./0-select_states.py <mysql username> \
 #                             <mysql password> \
 #                             <database name>
-import sys
-import MySQLdb
-
 if __name__ == "__main__":
+    import sys
+    import MySQLdb
+
     usr = sys.argv[1]
     pas = sys.argv[2]
     dtb = sys.argv[3]
