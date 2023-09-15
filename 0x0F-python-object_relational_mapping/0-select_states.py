@@ -13,4 +13,5 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=usr, passwd=pas, db=dtb)
     c = db.cursor()
     c.execute("SELECT * FROM `states`ORDER BY `id`")
-    [print(state) for state in c.fetchall()]
+    for state in c.fetchall():
+        print(state)	    
