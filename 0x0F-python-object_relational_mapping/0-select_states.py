@@ -4,14 +4,14 @@
 # Usage: ./0-select_states.py <mysql username> \
 #                             <mysql password> \
 #                             <database name>
-import sys 
+
 import MySQLdb
+import sys
+def list_states():
+    usr = sys.argv[1]
+    pas = sys.argv[2]
+    dtb = sys.argv[3]
 
-usr = sys.argv[1]
-pas = sys.argv[2]
-dtb = sys.argv[3]
-
-if __name__ == "__main__":
     db = MySQLdb.connect(host='localhost', port=3306, user=usr, passwd=pas, db=dtb)
     c = db.cursor()
     c.execute("SELECT * FROM `states`ORDER BY `id` ASC")
@@ -20,3 +20,5 @@ if __name__ == "__main__":
     db.commit()
     c.close()
     db.close()
+if __name__ == "__main__":
+    list_states()
