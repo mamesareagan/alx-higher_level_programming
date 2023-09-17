@@ -12,8 +12,11 @@ pas = sys.argv[2]
 dtb = sys.argv[3]
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=usr, passwd=pas, db=dtb)
+    db = MySQLdb.connect(host='localhost', port=3306, user=usr, passwd=pas, db=dtb)
     c = db.cursor()
-    c.execute("SELECT * FROM `states`ORDER BY `id`")
+    c.execute("SELECT * FROM `states`ORDER BY `id` ASC")
     for state in c.fetchall():
-        print(state)	    
+        print(state)
+    db.commit()
+    c.close()
+    db.close()
