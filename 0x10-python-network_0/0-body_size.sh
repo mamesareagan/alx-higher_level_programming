@@ -1,3 +1,3 @@
 #!/bin/bash
-#sends a request to URL and display size of the response
-curl -s "$1" | wc -c
+#a Bash script that takes in a URL, sends a request to that URL
+echo "$(curl -s -w '%{size_download}' -o /dev/null $1)"
